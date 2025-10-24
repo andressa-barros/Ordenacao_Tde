@@ -1,3 +1,4 @@
+// Cocktail Sort — uma variação do Bubble Sort que vai e volta no vetor
 public class CocktailSort {
     public static void sort(int[] v, int n) {
         Util.zerarContadores();
@@ -5,9 +6,11 @@ public class CocktailSort {
         int inicio = 0;
         int fim = n - 1;
 
+        // Continua enquanto houver trocas
         while (trocou) {
             trocou = false;
 
+            // Percorre da esquerda para a direita
             for (int i = inicio; i < fim; i++) {
                 Util.interacoes++;
                 if (v[i] > v[i + 1]) {
@@ -18,8 +21,9 @@ public class CocktailSort {
                     trocou = true;
                 }
             }
-            fim--;
+            fim--; // reduz o limite direito
 
+            // Percorre da direita para a esquerda
             for (int i = fim; i > inicio; i--) {
                 Util.interacoes++;
                 if (v[i] < v[i - 1]) {
@@ -30,7 +34,7 @@ public class CocktailSort {
                     trocou = true;
                 }
             }
-            inicio++;
+            inicio++; // aumenta o limite esquerdo
         }
     }
 }
