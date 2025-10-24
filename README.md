@@ -43,7 +43,7 @@ int[] vetor3 = {99, 85, 73, 60, 50, 40, 35, 30, 25, 20, 15, 14, 13, 12, 11, 10, 
 | **Vetor 2** | Todos (0)           | -              | -                |
 | **Vetor 3** | Selection Sort (10) | Comb Sort (18) | Bucket Sort (23) |
 
-## Menos interações
+## Menos interações:
 | Vetor       | 1º               | 2º              | 3º                                           |
 | ----------- | ---------------- | --------------- | -------------------------------------------- |
 | **Vetor 1** | Bucket Sort (85) | Comb Sort (129) | Cocktail Sort (162)                          |
